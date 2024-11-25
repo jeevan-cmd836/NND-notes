@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Goals template</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Notes App</title>
+
+  <style>
+
+    /* General Styles */
+    <style>
+
+      img{
+
+      opacity:0.1;
+
+        }
+
+    body {
+      
+        
+      margin: 0;
+
+      font-family: aerial, sans-serif;
+
+      background-color: #1a1a1a;
+      color: #fff;
+      width:100%;
+        height:50vh;
+       background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBa6EcQbnbSE8dPDFaKnnsUvoEozDosJaiaLL2JDiL70CCrgAgxlLBcdg&s=10");
+
+      background-size :cover;
+      background-size:100%;
+      background-position-y:100px;
+
+      background-repeat:no-repeat;
+    alighn-center: ;
+  }
+
+    /* Header Section */
+
+    header {
+
+      background: #212121;
+
+      padding: 20px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+      
+
+    }
+
+    header h1 {
+
+      color: #FFA500;
+
+      font-size: 24px;
+
+      margin: 0;
+
+    }
+
+    header nav a {
+
+      color: #fff;
+      font-family:cursive,sans-serif;
+
+      text-decoration: aerial ,sans-serif;
+
+      margin: 0 10px;
+
+      font-size: 50px;
+
+      transition: color 0.3s;
+
+    }
+
+    header nav a:hover {
+
+      color: #FFA500;
+
+    }
+
+    .btn {
+
+      background-color: #FFA500;
+
+      color: #fff;
+
+      padding: 10px 20px;
+
+      border: none;
+
+      border-radius: 5px;
+
+      cursor: pointer;
+
+      text-decoration: none;
+
+      font-size: 16px;
+
+      transition: background-color 0.3s;
+
+    }
+
+    .btn:hover {
+
+      background-color: #e59400;
+
+    }
+
+    /* Main Content */
+
+    main {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      padding: 40px;
+
+    }
+
+    .text-section {
+
+      max-width: 50%;
+
+    }
+
+    .text-section h2 {
+
+      font-size: 36px;
+
+      margin-bottom: 20px;
+
+    }
+
+    .text-section p {
+
+      font-size: 16px;
+
+      line-height: 1.6;
+
+      color: #ccc;
+
+    }
+
+    .text-section .btn {
+
+      margin-top: 20px;
+
+    }
+
+    .image-section img {
+
+      max-width: 90%;
+
+      border-radius: 50px;
+      border:10px solid #ffcc00;
+      postion-x:150px;
+      
+      
+
+    }
+
+    /* Notes Section */
+
+    .notes-section {
+
+      margin: 40px auto;
+
+      text-align: center;
+
+    }
+
+    textarea {
+
+      width: 90%;
+
+      max-width: 800px;
+
+      height: 200px;
+
+      padding: 15px;
+
+      font-size: 18px;
+
+      border: 2px solid #FFA500;
+
+      border-radius: 5px;
+
+      background-color: #f9f9f9;
+
+      color: #333;
+
+      resize: none;
+
+      transition: box-shadow 0.3s, border-color 0.3s;
+
+    }
+
+    textarea:focus {
+
+      outline: none;
+
+      border-color: #e59400;
+
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+
+    }
+
+    footer {
+
+      background: #212121;
+
+      text-align: center;
+
+      padding: 20px;
+
+      color: #aaa;
+
+      font-size: 14px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+
+  <header>
+
+    <h1>Notes App</h1>
+
+    <nav>
+
+      <a href="#home">Nar Narayan Dev </a>
+
+      <a href="#about"></a>
+
+      <a href="#features"></a>
+
+      <a href="#contact"></a>
+
+    </nav>
+
+    <a href="#notes" class="btn">Write Notes</a>
+
+  </header>
+
+  <!-- Main Section -->
+
+  <main>
+
+    <div class="text-section">
+
+      <h2>Write and Save Notes Easily</h2>
+
+      <p>
+
+        Keep track of your thoughts and ideas with our modern notes application.
+
+        All your notes are saved automatically, ensuring you never lose a single idea.
+
+      </p>
+
+      <a href="#notes" class="btn">Start Writing</a>
+
+    </div>
+
+    <div class="image-section">
+
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVXeDPGF6vGWns6Rbv42ekMvy1Eo_khzw0c5b7eQjPv1-vBa2DQIaY1ogw&s=10" 
+           
+    </div>
+
+  </main>
+
+  <!-- Notes Section -->
+
+  <section class="notes-section" id="notes">
+
+    <h2>Write Your Notes</h2>
+
+    <textarea id="noteArea" placeholder="Type your notes here..."></textarea>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+
+    &copy; 2024 Notes App. All Rights Reserved.
+
+  </footer>
+
+  <!-- JavaScript -->
+
+  <script>
+
+    const noteArea = document.getElementById('noteArea');
+
+    // Load saved notes from localStorage
+
+    noteArea.value = localStorage.getItem('notes') || '';
+
+    // Save notes to localStorage automatically
+
+    noteArea.addEventListener('input', () => {
+
+      localStorage.setItem('notes', noteArea.value);
+
+    });
+
+  </script>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
